@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+Certainly! Below is an example structure for your README.md file:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tooltip Component
 
-## Available Scripts
+A simple tooltip component that displays a tooltip on hovering over a button.
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This project provides a customizable tooltip component that can be easily integrated into your web applications. The tooltip can be positioned at the top, bottom, right, or left of the triggering button, providing a seamless user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Tooltip Demo](link-to-your-gif.gif)
 
-### `npm test`
+[Live Demo](link-to-live-demo)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To use the tooltip component in your project, follow these simple steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install the package using your package manager of choice:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install your-tooltip-package
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Import the `Tooltip` component in your code:
 
-### `npm run eject`
+```javascript
+import Tooltip from 'your-tooltip-package';
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Use the `Tooltip` component by passing the desired position as a prop. Example:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```javascript
+<Tooltip position="top">
+  <button>Hover me</button>
+</Tooltip>
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Props
 
-## Learn More
+### position (string, required)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The position prop determines the location of the tooltip relative to the button. Available options: "top", "bottom", "right", "left".
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Example:
 
-### Code Splitting
+```javascript
+<Tooltip position="bottom">
+  <button>Hover me</button>
+</Tooltip>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Styling
 
-### Analyzing the Bundle Size
+Feel free to customize the tooltip appearance by adding your styles or modifying the existing CSS. The tooltip component comes with minimal styling to ensure easy integration with your project's design.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+If you find any issues or have suggestions for improvements, please feel free to contribute by submitting a pull request or opening an issue in the [GitHub repository](link-to-repo).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the [MIT License](link-to-license-file). Feel free to use, modify, and distribute the code as needed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Acknowledgments
 
-### Deployment
+Special thanks to [Contributor Name] for their valuable contributions to this project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Now, replace placeholders such as `your-tooltip-package`, `link-to-live-demo`, `link-to-repo`, `link-to-license-file`, and `[Contributor Name]` with the actual information related to your project. Additionally, replace the placeholder `[Live Demo]` with a hyperlink to the live demo of your tooltip component.
