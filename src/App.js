@@ -97,7 +97,7 @@ class App extends React.Component{
           </button>
           {this.state.hovering && <Tooltip position={this.state.position}/>}
         </div>
-        {/*....copy right.....*/}
+        {//....copy right.....}
         <div>
         
           <h5 className='copyright'>
