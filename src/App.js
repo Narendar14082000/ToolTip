@@ -5,7 +5,7 @@ import Tooltip from './Tooltip';
 
 class App extends React.Component{
 
-//.....we have to create the state...... 
+//.........................................................................we have to create the state............................................. 
   constructor(){
     super();
     this.state={
@@ -14,7 +14,7 @@ class App extends React.Component{
     };
   }
 
-  //........handleClick function which handle the position...........
+  //..........................................................handleClick function which handle the position............................................................
   handleClick=(pos)=>{
     this.setState({
       position:pos,
@@ -22,7 +22,7 @@ class App extends React.Component{
   };
 
 
-  //.........handleMouseEnter function which handle the hovering condintion...........
+  //..........................................................handleMouseEnter function which handle the hovering condintion............................................................
 
 
   handleMouseEnter=()=>{
@@ -33,7 +33,7 @@ class App extends React.Component{
 
 
 
-    //..........handleMouseEnter function which handle the hovering condintion......................
+    //..........................................................handleMouseEnter function which handle the hovering condintion............................................................
 
 
   handleMouseLeave=()=>{
@@ -43,14 +43,14 @@ class App extends React.Component{
   }
 
 
-  //........render part of the class based component...........
+  //..........................................................render part of the class based component............................................................
 
   render(){
     return (
-  //.......app return main jsx........
+  //..........................................................app return main jsx............................................................
 
       <div className="App">
-{  //.....position of the all position button......
+{  //..........................................................position of the all position button............................................................
 }
         <div className='btn-position'>
           <div className='grp-name'>
@@ -85,8 +85,9 @@ class App extends React.Component{
             down
           </button>
         </div>
-        {    //...hover button ....... }        
-        <div id="button-container">
+{        //..........................................................hover button ............................................................
+
+}        <div id="button-container">
           <button
           className='btn hover-btn'
           onMouseOver={this.handleMouseEnter}
@@ -97,7 +98,7 @@ class App extends React.Component{
           </button>
           {this.state.hovering && <Tooltip position={this.state.position}/>}
         </div>
-        {//....copy right.....}
+        {/*........................................................... copy right..............................................................*/}
         <div>
         
           <h5 className='copyright'>

@@ -6,7 +6,7 @@ Welcome to the Tooltip Component project! This simple component enhances your we
 
 ## Live Demo
 
-Check out the live demo of the Tooltip Component [here](https://keen-pegasus-610bd5.netlify.app/). Experience the interactive tooltips and see how they dynamically appear based on the specified position.
+Check out the live demo of the Tooltip Component [here](https://curious-puppy-3374ef.netlify.app/). Experience the interactive tooltips and see how they dynamically appear based on the specified position.
 
 ## Getting Started
 
