@@ -1,5 +1,5 @@
 import React from 'react';
-//..................................................here is the tooltip class based component.......................................................
+//......here is the tooltip class based component...........
 
 
 class Tooltip extends React.Component{
