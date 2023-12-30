@@ -1,40 +1,40 @@
-Certainly! Below is an example structure for your README.md file:
+Certainly! It seems like you've got a straightforward task at hand. Here's a simple template for your README.md file:
 
+```markdown
 # Tooltip Component
 
-A simple tooltip component that displays a tooltip on hovering over a button.
-
-## Overview
-
-This project provides a customizable tooltip component that can be easily integrated into your web applications. The tooltip can be positioned at the top, bottom, right, or left of the triggering button, providing a seamless user experience.
+A simple React tooltip component that displays a tooltip when hovering over a button. The tooltip position can be customized based on the provided options: "top", "bottom", "right", or "left".
 
 ## Demo
 
-![Tooltip Demo](link-to-your-gif.gif)
+![Tooltip Demo](link/to/demo/gif)
 
-[Live Demo](link-to-live-demo)
+[Live Demo](https://keen-pegasus-610bd5.netlify.app/)
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Props](#props)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Installation
 
-To use the tooltip component in your project, follow these simple steps:
-
-1. Install the package using your package manager of choice:
-
 ```bash
-npm install your-tooltip-package
-```
-
-2. Import the `Tooltip` component in your code:
-
-```javascript
-import Tooltip from 'your-tooltip-package';
+npm install @your-namespace/tooltip-component
 ```
 
 ## Usage
 
-Use the `Tooltip` component by passing the desired position as a prop. Example:
+Import the Tooltip component and use it in your React application.
 
-```javascript
+```jsx
+import Tooltip from '@your-namespace/tooltip-component';
+
+// ...
+
 <Tooltip position="top">
   <button>Hover me</button>
 </Tooltip>
@@ -42,34 +42,26 @@ Use the `Tooltip` component by passing the desired position as a prop. Example:
 
 ## Props
 
-### position (string, required)
+### `position` (string, required)
 
-The position prop determines the location of the tooltip relative to the button. Available options: "top", "bottom", "right", "left".
+Specifies the position of the tooltip. Options: "top", "bottom", "right", "left".
 
-Example:
+## Examples
 
-```javascript
+```jsx
+<Tooltip position="top">
+  <button>Top Tooltip</button>
+</Tooltip>
+
 <Tooltip position="bottom">
-  <button>Hover me</button>
+  <button>Bottom Tooltip</button>
+</Tooltip>
+
+<Tooltip position="right">
+  <button>Right Tooltip</button>
+</Tooltip>
+
+<Tooltip position="left">
+  <button>Left Tooltip</button>
 </Tooltip>
 ```
-
-## Styling
-
-Feel free to customize the tooltip appearance by adding your styles or modifying the existing CSS. The tooltip component comes with minimal styling to ensure easy integration with your project's design.
-
-## Contributing
-
-If you find any issues or have suggestions for improvements, please feel free to contribute by submitting a pull request or opening an issue in the [GitHub repository](link-to-repo).
-
-## License
-
-This project is licensed under the [MIT License](link-to-license-file). Feel free to use, modify, and distribute the code as needed.
-
-## Acknowledgments
-
-Special thanks to [Contributor Name] for their valuable contributions to this project.
-
----
-
-Now, replace placeholders such as `your-tooltip-package`, `link-to-live-demo`, `link-to-repo`, `link-to-license-file`, and `[Contributor Name]` with the actual information related to your project. Additionally, replace the placeholder `[Live Demo]` with a hyperlink to the live demo of your tooltip component.
